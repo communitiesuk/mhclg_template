@@ -1,7 +1,7 @@
 (function () {
   "use strict"
   var root = this;
-  if(typeof root.GOVUK === 'undefined') { root.GOVUK = {}; }
+  if(typeof root.HACKNEY === 'undefined') { root.HACKNEY = {}; }
 
   /*
     Cookie methods
@@ -10,26 +10,26 @@
     Usage:
 
       Setting a cookie:
-      GOVUK.cookie('hobnob', 'tasty', { days: 30 });
+      HACKNEY.cookie('hobnob', 'tasty', { days: 30 });
 
       Reading a cookie:
-      GOVUK.cookie('hobnob');
+      HACKNEY.cookie('hobnob');
 
       Deleting a cookie:
-      GOVUK.cookie('hobnob', null);
+      HACKNEY.cookie('hobnob', null);
   */
-  GOVUK.cookie = function (name, value, options) {
+  HACKNEY.cookie = function (name, value, options) {
     if(typeof value !== 'undefined'){
       if(value === false || value === null) {
-        return GOVUK.setCookie(name, '', { days: -1 });
+        return HACKNEY.setCookie(name, '', { days: -1 });
       } else {
-        return GOVUK.setCookie(name, value, options);
+        return HACKNEY.setCookie(name, value, options);
       }
     } else {
-      return GOVUK.getCookie(name);
+      return HACKNEY.getCookie(name);
     }
   };
-  GOVUK.setCookie = function (name, value, options) {
+  HACKNEY.setCookie = function (name, value, options) {
     if(typeof options === 'undefined') {
       options = {};
     }
@@ -44,7 +44,7 @@
     }
     document.cookie = cookieString;
   };
-  GOVUK.getCookie = function (name) {
+  HACKNEY.getCookie = function (name) {
     var nameEQ = name + "=";
     var cookies = document.cookie.split(';');
     for(var i = 0, len = cookies.length; i < len; i++) {

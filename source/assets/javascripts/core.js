@@ -2,8 +2,8 @@
   "use strict"
 
   // add cookie message
-  if (window.GOVUK && GOVUK.addCookieMessage) {
-    GOVUK.addCookieMessage();
+  if (window.HACKNEY && HACKNEY.addCookieMessage) {
+    HACKNEY.addCookieMessage();
   }
 
   // header navigation toggle
