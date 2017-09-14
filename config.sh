@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-REPO_PATH='alphagov/govuk_template'
+REPO_PATH='unboxed/hackney_template'
 
-echo "Add config for alphagov/$REPO_PATH"
+echo "Add config for $REPO_PATH"
 
 git config --global user.name "GOV.UK Patterns & Tools CI User"
 git config --global user.email "patterns-and-tools-github-user@digital.cabinet-office.gov.uk"

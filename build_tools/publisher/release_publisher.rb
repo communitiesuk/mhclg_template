@@ -1,9 +1,9 @@
-require 'govuk_template/version'
+require 'hackney_template/version'
 require 'octokit'
 
 module Publisher
   class ReleasePublisher
-    GITHUB_REPO = 'alphagov/govuk_template'
+    GITHUB_REPO = 'unboxed/hackney_template'
 
     def initialize(version = GovukTemplate::VERSION)
       @version = version

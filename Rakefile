@@ -1,6 +1,6 @@
 $:.unshift File.expand_path('../lib', __FILE__)
 $:.unshift File.expand_path('../build_tools', __FILE__)
-require "govuk_template/version"
+require "hackney_template/version"
 
 desc "Compile template and assets from ./source into ./app"
 task :compile do
@@ -22,72 +22,72 @@ task :build => ["build:gem",
                 "build:django"]
 
 namespace :build do
-  desc "Build govuk_template-#{GovukTemplate::VERSION}.gem into the pkg directory"
+  desc "Build hackney_template-#{GovukTemplate::VERSION}.gem into the pkg directory"
   task :gem => :compile do
-    puts "Building pkg/govuk_template-#{GovukTemplate::VERSION}.gem"
+    puts "Building pkg/hackney_template-#{GovukTemplate::VERSION}.gem"
     require 'packager/gem_packager'
     Packager::GemPackager.build
   end
 
-  desc "Build govuk_template-#{GovukTemplate::VERSION}.tgz into the pkg directory"
+  desc "Build hackney_template-#{GovukTemplate::VERSION}.tgz into the pkg directory"
   task :tar => :compile do
-    puts "Building pkg/govuk_template-#{GovukTemplate::VERSION}.tgz"
+    puts "Building pkg/hackney_template-#{GovukTemplate::VERSION}.tgz"
     require 'packager/tar_packager'
     Packager::TarPackager.build
   end
 
-  desc "Build play_govuk_template-#{GovukTemplate::VERSION}.tgz into the pkg directory"
+  desc "Build play_hackney_template-#{GovukTemplate::VERSION}.tgz into the pkg directory"
   task :play => :compile do
-    puts "Building pkg/play_govuk_template-#{GovukTemplate::VERSION}.tgz"
+    puts "Building pkg/play_hackney_template-#{GovukTemplate::VERSION}.tgz"
     require 'packager/play_packager'
     Packager::PlayPackager.build
   end
 
-  desc "Build mustache_govuk_template-#{GovukTemplate::VERSION} into the pkg directory"
+  desc "Build mustache_hackney_template-#{GovukTemplate::VERSION} into the pkg directory"
   task :mustache => :compile do
-    puts "Building pkg/mustache_govuk_template-#{GovukTemplate::VERSION}"
+    puts "Building pkg/mustache_hackney_template-#{GovukTemplate::VERSION}"
     require 'packager/mustache_packager'
     Packager::MustachePackager.build
   end
 
-  desc "Build liquid_govuk_template-#{GovukTemplate::VERSION} into the pkg directory"
+  desc "Build liquid_hackney_template-#{GovukTemplate::VERSION} into the pkg directory"
   task :liquid => :compile do
-    puts "Building pkg/liquid_govuk_template-#{GovukTemplate::VERSION}"
+    puts "Building pkg/liquid_hackney_template-#{GovukTemplate::VERSION}"
     require 'packager/liquid_packager'
     Packager::LiquidPackager.build
   end
 
-  desc "Build mustache_inheritance_govuk_template-#{GovukTemplate::VERSION} into the pkg directory"
+  desc "Build mustache_inheritance_hackney_template-#{GovukTemplate::VERSION} into the pkg directory"
   task :mustache_inheritance => :compile do
-    puts "Building pkg/mustache_inheritance_govuk_template-#{GovukTemplate::VERSION}"
+    puts "Building pkg/mustache_inheritance_hackney_template-#{GovukTemplate::VERSION}"
     require 'packager/mustache_inheritance_packager'
     Packager::MustacheInheritancePackager.build
   end
 
-  desc "Build jinja_govuk_template-#{GovukTemplate::VERSION} into the pkg directory"
+  desc "Build jinja_hackney_template-#{GovukTemplate::VERSION} into the pkg directory"
   task :jinja => :compile do
-    puts "Building pkg/jinja_govuk_template-#{GovukTemplate::VERSION}"
+    puts "Building pkg/jinja_hackney_template-#{GovukTemplate::VERSION}"
     require 'packager/jinja_packager'
     Packager::JinjaPackager.build
   end
 
-  desc "Build django_govuk_template-#{GovukTemplate::VERSION} into the pkg directory"
+  desc "Build django_hackney_template-#{GovukTemplate::VERSION} into the pkg directory"
   task :django => :compile do
-    puts "Building pkg/django_govuk_template-#{GovukTemplate::VERSION}"
+    puts "Building pkg/django_hackney_template-#{GovukTemplate::VERSION}"
     require 'packager/django_packager'
     Packager::DjangoPackager.build
   end
 
-  desc "Build ejs_govuk_template-#{GovukTemplate::VERSION} into the pkg directory"
+  desc "Build ejs_hackney_template-#{GovukTemplate::VERSION} into the pkg directory"
   task :ejs => :compile do
-    puts "Building pkg/ejs_govuk_template-#{GovukTemplate::VERSION}"
+    puts "Building pkg/ejs_hackney_template-#{GovukTemplate::VERSION}"
     require 'packager/ejs_packager'
     Packager::EJSPackager.build
   end
   
-  desc "Build govuk_template-#{GovukTemplate::VERSION}.jar into the pkg directory"
+  desc "Build hackney_template-#{GovukTemplate::VERSION}.jar into the pkg directory"
   task :webjar => :compile do
-    puts "Building pkg/govuk_template-#{GovukTemplate::VERSION}.jar"
+    puts "Building pkg/hackney_template-#{GovukTemplate::VERSION}.jar"
     require 'packager/webjar_packager'
     Packager::WebJarPackager.build
   end
@@ -97,9 +97,9 @@ namespace :build do
     require 'publisher/gem_publisher'
     p = Publisher::GemPublisher.new
     if p.version_released?
-      puts "govuk_template-#{GovukTemplate::VERSION} already released.  Not pushing."
+      puts "hackney_template-#{GovukTemplate::VERSION} already released.  Not pushing."
     else
-      puts "Pushing govuk_template-#{GovukTemplate::VERSION}"
+      puts "Pushing hackney_template-#{GovukTemplate::VERSION}"
       p.publish
       puts "Done."
 
@@ -122,36 +122,36 @@ namespace :build do
     require 'publisher/play_publisher'
     q = Publisher::PlayPublisher.new
     if q.version_released?
-      puts "govuk_template_play #{GovukTemplate::VERSION} already released. Not pushing."
+      puts "hackney_template_play #{GovukTemplate::VERSION} already released. Not pushing."
     else
-      puts "Pushing govuk_template_play #{GovukTemplate::VERSION} to git repo"
+      puts "Pushing hackney_template_play #{GovukTemplate::VERSION} to git repo"
       q.publish
     end
 
     require 'publisher/mustache_publisher'
     q = Publisher::MustachePublisher.new
     if q.version_released?
-      puts "govuk_template_mustache #{GovukTemplate::VERSION} already released. Not pushing."
+      puts "hackney_template_mustache #{GovukTemplate::VERSION} already released. Not pushing."
     else
-      puts "Pushing govuk_template_mustache #{GovukTemplate::VERSION} to git repo"
+      puts "Pushing hackney_template_mustache #{GovukTemplate::VERSION} to git repo"
       q.publish
     end
 
     require 'publisher/ejs_publisher'
     q = Publisher::EJSPublisher.new
     if q.version_released?
-      puts "govuk_template_ejs #{GovukTemplate::VERSION} already released. Not pushing."
+      puts "hackney_template_ejs #{GovukTemplate::VERSION} already released. Not pushing."
     else
-      puts "Pushing govuk_template_ejs #{GovukTemplate::VERSION} to git repo"
+      puts "Pushing hackney_template_ejs #{GovukTemplate::VERSION} to git repo"
       q.publish
     end
 
     require 'publisher/jinja_publisher'
     q = Publisher::JinjaPublisher.new
     if q.version_released?
-      puts "govuk_template_jinja #{GovukTemplate::VERSION} already released. Not pushing."
+      puts "hackney_template_jinja #{GovukTemplate::VERSION} already released. Not pushing."
     else
-      puts "Pushing govuk_template_jinja #{GovukTemplate::VERSION} to git repo"
+      puts "Pushing hackney_template_jinja #{GovukTemplate::VERSION} to git repo"
       q.publish
     end
   end

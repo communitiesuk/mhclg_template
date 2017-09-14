@@ -1,5 +1,5 @@
 require 'open3'
-require 'govuk_template/version'
+require 'hackney_template/version'
 require 'tmpdir'
 require_relative '../compiler/plain_processor'
 
@@ -15,13 +15,13 @@ module Packager
 
     def initialize
       @repo_root = Pathname.new(File.expand_path('../../..', __FILE__))
-      @base_name = "govuk_template-#{GovukTemplate::VERSION}"
+      @base_name = "hackney_template-#{GovukTemplate::VERSION}"
     end
 
     def build
-      Dir.mktmpdir("govuk_template") do |dir|
+      Dir.mktmpdir("hackney_template") do |dir|
         @target_dir = Pathname.new(dir).join('META-INF')
-        @internal_dir = Pathname.new(@target_dir).join("resources/webjars/govuk_template/#{GovukTemplate::VERSION}/")
+        @internal_dir = Pathname.new(@target_dir).join("resources/webjars/hackney_template/#{GovukTemplate::VERSION}/")
         @internal_dir.mkpath
         prepare_contents
         create_jar

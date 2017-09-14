@@ -37,6 +37,6 @@ We use [Semantic Versioning](http://semver.org/).
 
 ### Releasing a new version ###
 
-1. Create a branch that proposes a new [version number](/lib/govuk_template/version.rb#L2), and [`CHANGELOG`](CHANGELOG.md)
-2. Open a Pull Request - here is a [good example](https://github.com/alphagov/govuk_template/pull/204/)
+1. Create a branch that proposes a new [version number](/lib/hackney_template/version.rb#L2), and [`CHANGELOG`](CHANGELOG.md)
+2. Open a Pull Request - here is a [good example](https://github.com/unboxed/hackney_template/pull/204/)
 3. Once merged into master a new version will be built and [published](docs/publishing.md)

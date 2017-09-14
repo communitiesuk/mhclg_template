@@ -1,10 +1,10 @@
 # 0.22.3
 
-- Fix the Django package – ensure setuptools uses the MANIFEST.in by setting the include_package_data flag to True, and fix a broken download link ([PR #319](https://github.com/alphagov/govuk_template/pull/319)).
+- Fix the Django package – ensure setuptools uses the MANIFEST.in by setting the include_package_data flag to True, and fix a broken download link ([PR #319](https://github.com/unboxed/hackney_template/pull/319)).
 
 # 0.22.2
 
-- Revert ([PR #281](https://github.com/alphagov/govuk_template/pull/281)) add `text-decoration-skip: ink` to all links on GOV.UK. Chrome does a poor job of rendering underlines resulting in potentially confusing underlines that look like punctuation ([PR #316](https://github.com/alphagov/govuk_template/pull/316)).
+- Revert ([PR #281](https://github.com/unboxed/hackney_template/pull/281)) add `text-decoration-skip: ink` to all links on GOV.UK. Chrome does a poor job of rendering underlines resulting in potentially confusing underlines that look like punctuation ([PR #316](https://github.com/unboxed/hackney_template/pull/316)).
 
 # 0.22.1
 
@@ -12,53 +12,53 @@
 
 # 0.22.0
 
-- Adds new Apple touch icons to precompile list for Rails apps [PR #305](https://github.com/alphagov/govuk_template/pull/305)
-- Revert SRI to avoid breaking the site for Firefox users on versions less than 52 [PR #308](https://github.com/alphagov/govuk_template/pull/301)
+- Adds new Apple touch icons to precompile list for Rails apps [PR #305](https://github.com/unboxed/hackney_template/pull/305)
+- Revert SRI to avoid breaking the site for Firefox users on versions less than 52 [PR #308](https://github.com/unboxed/hackney_template/pull/301)
 
 # 0.21.0
 
-- Adds SRI to js and css assets ([PR #301](https://github.com/alphagov/govuk_template/pull/301)). This requires `sprockets-rails` >= 3.0 in the projects using this gem.
+- Adds SRI to js and css assets ([PR #301](https://github.com/unboxed/hackney_template/pull/301)). This requires `sprockets-rails` >= 3.0 in the projects using this gem.
 
 # 0.20.1
-- Fix invalid html from Apple touch icons syntax [PR #300](https://github.com/alphagov/govuk_template/pull/300) and
+- Fix invalid html from Apple touch icons syntax [PR #300](https://github.com/unboxed/hackney_template/pull/300) and
 update icon sizes to match Apple specs
 
 # 0.20.0
 
-- Fix EJS template ([PR #270](https://github.com/alphagov/govuk_template/pull/270))
-- Add `theme-color` support to make the page surround in Chrome’s tab view on Android match the black GOV.UK header ([PR #278](https://github.com/alphagov/govuk_template/pull/278))
-- Add `text-decoration-skip: ink` to all links on GOV.UK ([PR #281](https://github.com/alphagov/govuk_template/pull/281))
-- Improve contrast of links when focused ([PR #272](https://github.com/alphagov/govuk_template/pull/272))
-- Make header text colour black when focused ([PR #274](https://github.com/alphagov/govuk_template/pull/274))
+- Fix EJS template ([PR #270](https://github.com/unboxed/hackney_template/pull/270))
+- Add `theme-color` support to make the page surround in Chrome’s tab view on Android match the black GOV.UK header ([PR #278](https://github.com/unboxed/hackney_template/pull/278))
+- Add `text-decoration-skip: ink` to all links on GOV.UK ([PR #281](https://github.com/unboxed/hackney_template/pull/281))
+- Improve contrast of links when focused ([PR #272](https://github.com/unboxed/hackney_template/pull/272))
+- Make header text colour black when focused ([PR #274](https://github.com/unboxed/hackney_template/pull/274))
 
 # 0.19.2
 
-- Increase skiplink colour contrast ([PR #263](https://github.com/alphagov/govuk_template/pull/263))
-- Fix Scala compile issues for Play template ([PR #261](https://github.com/alphagov/govuk_template/pull/261))
+- Increase skiplink colour contrast ([PR #263](https://github.com/unboxed/hackney_template/pull/263))
+- Fix Scala compile issues for Play template ([PR #261](https://github.com/unboxed/hackney_template/pull/261))
 
 # 0.19.1
 
-- Have focus outline appear outside of element rather than covering it in Safari and Chrome ([PR #259](https://github.com/alphagov/govuk_template/pull/259))
+- Have focus outline appear outside of element rather than covering it in Safari and Chrome ([PR #259](https://github.com/unboxed/hackney_template/pull/259))
 
 # 0.19.0
 
-- Remove external link styles ([PR #231](https://github.com/alphagov/govuk_template/pull/231))
-- Remove extraneous copy of HTML5shiv that wasn’t being used ([PR #254](https://github.com/alphagov/govuk_template/pull/254))
-- Update govuk_frontend_toolkit to latest version ([PR #256](https://github.com/alphagov/govuk_template/pull/256))
+- Remove external link styles ([PR #231](https://github.com/unboxed/hackney_template/pull/231))
+- Remove extraneous copy of HTML5shiv that wasn’t being used ([PR #254](https://github.com/unboxed/hackney_template/pull/254))
+- Update govuk_frontend_toolkit to latest version ([PR #256](https://github.com/unboxed/hackney_template/pull/256))
 
 # 0.18.3
 
-- Add docs for adding `tabindex="-1"` to fix the skiplink ([PR #250](https://github.com/alphagov/govuk_template/pull/250))
-- Logo fixes: Fix logo breaking layout when increasing font size, fix invalid or non-standard CSS and remove obsolete CSS around logo, adjust logo dimensions slightly ([PR #237](https://github.com/alphagov/govuk_template/pull/237))
+- Add docs for adding `tabindex="-1"` to fix the skiplink ([PR #250](https://github.com/unboxed/hackney_template/pull/250))
+- Logo fixes: Fix logo breaking layout when increasing font size, fix invalid or non-standard CSS and remove obsolete CSS around logo, adjust logo dimensions slightly ([PR #237](https://github.com/unboxed/hackney_template/pull/237))
 
 # 0.18.2
 
-- Degrade gracefully when external JS can’t be loaded ([PR #248](https://github.com/alphagov/govuk_template/pull/248))
+- Degrade gracefully when external JS can’t be loaded ([PR #248](https://github.com/unboxed/hackney_template/pull/248))
 
 # 0.18.1
 
-- Remove gov.uk prefix from relative links when printing ([PR #234](https://github.com/alphagov/govuk_template/pull/234))
-- Fix a `.visually-hidden` bug on GOV.UK ([PR #177](https://github.com/alphagov/govuk_template/pull/177))
+- Remove gov.uk prefix from relative links when printing ([PR #234](https://github.com/unboxed/hackney_template/pull/234))
+- Fix a `.visually-hidden` bug on GOV.UK ([PR #177](https://github.com/unboxed/hackney_template/pull/177))
 
 # 0.18.0
 
@@ -146,7 +146,7 @@ update icon sizes to match Apple specs
 - Bump govuk_frontend_toolkit to 3.5.1
 - Add `homepage_url` for overriding the href for the header logo link ("https://www.gov.uk" by default)
 - Add `global_header_text` for overriding the header logo text ("GOV.UK" by default)
-- Removed deprecated grid layout mixins: https://github.com/alphagov/govuk_template/pull/129
+- Removed deprecated grid layout mixins: https://github.com/unboxed/hackney_template/pull/129
 
 # 0.12.0
 

@@ -1,5 +1,5 @@
 require 'open3'
-require 'govuk_template/version'
+require 'hackney_template/version'
 require_relative 'tar_packager'
 require_relative '../compiler/mustache_inheritance_processor'
 
@@ -7,7 +7,7 @@ module Packager
   class MustacheInheritancePackager < TarPackager
     def initialize
       super
-      @base_name = "mustache_inheritance_govuk_template-#{GovukTemplate::VERSION}"
+      @base_name = "mustache_inheritance_hackney_template-#{GovukTemplate::VERSION}"
     end
 
     def process_template(file)
