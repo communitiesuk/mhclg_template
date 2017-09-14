@@ -14,7 +14,7 @@ def valid_sections
     inside_header: "<%- partial('partials/_inside_header') %>",
     proposition_header: "<%- partial('partials/_proposition_header') %>",
     cookie_message: "<%- partial('partials/_cookie_message') %>",
-    homepage_url: "<% if (homepageUrl) { %><%= homepageUrl %><% } else { %>https://www.gov.uk/<% } %>",
+    homepage_url: "<% if (homepageUrl) { %><%= homepageUrl %><% } else { %>https://www.hackney.gov.uk/<% } %>",
   }
 end
 

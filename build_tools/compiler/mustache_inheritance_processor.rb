@@ -17,7 +17,7 @@ module Compiler
       cookie_message:       tag_for(:cookieMessage),
       footer_support_links: tag_for(:footerSupportLinks),
       footer_top:           tag_for(:footerTop),
-      homepage_url:         tag_for(:homepageUrl, "https://www.gov.uk/"),
+      homepage_url:         tag_for(:homepageUrl, "https://www.hackney.gov.uk/"),
       global_header_text:   tag_for(:globalHeaderText, "GOV.UK"),
       head:                 tag_for(:head),
       header_class:         tag_for(:headerClass),

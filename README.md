@@ -1,6 +1,6 @@
 # GOV.UK Template
 
-This provides a template containing the GOV.UK header and footer, and associated assets. It provides a consistent GOV.UK brand experience across `www.gov.uk` and all services running under the `service.gov.uk` domain.
+This provides a template containing the GOV.UK header and footer, and associated assets. It provides a consistent GOV.UK brand experience across `www.hackney.gov.uk` and all services running under the `service.gov.uk` domain.
 
 The template is built from [`source`](source/) files, and multiple packages are generated to support different languages and frameworks.
 
