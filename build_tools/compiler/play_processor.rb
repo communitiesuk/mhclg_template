@@ -8,7 +8,7 @@ module Compiler
       layout: '<!-- Page content goes here -->',
       html_lang: '@htmlLang.getOrElse("en")',
       # NOTE: the mismatch between page_title and @title
-      page_title: '@title.getOrElse("GOV.UK - The best place to find government services and information")',
+      page_title: '@title.getOrElse("Hackney Council")',
       # top_of_page has a special purpose: it is required by Play to define the
       # parameters to pass when rendering
       # https://www.playframework.com/documentation/2.2.x/ScalaTemplates#Template-parameters
@@ -28,7 +28,7 @@ module Compiler
       global_header_text: '@globalHeaderText.getOrElse("GOV.UK")',
       cookie_message: '@cookieMessage.getOrElse("<p>Hackney Council uses cookies to make the site simpler. <a href=\"https://www.hackney.gov.uk/data-protection-foi\">Find out more about cookies</a></p>")',
       skip_link_message: '@skipLinkMessage.getOrElse("Skip to main content")',
-      logo_link_title: '@logoLinkTitle.getOrElse("Go to the GOV.UK homepage")',
+      logo_link_title: '@logoLinkTitle.getOrElse("Go to the Hackney Council homepage")',
       licence_message: '@licenceMessage',
       crown_copyright_message: '@crownCopyrightMessage.getOrElse("&copy; Crown copyright")',
     }

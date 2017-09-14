@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = HackneyTemplate::VERSION
   spec.authors       = ["Alex Tomlins"]
   spec.email         = ["alex.tomlins@digital.cabinet-office.gov.uk"]
-  spec.summary       = %q{Rails engine supplying the GOV.UK header/footer template}
+  spec.summary       = %q{Rails engine supplying the Hackney Council header/footer template}
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/unboxed/hackney_template"
   spec.license       = "MIT"

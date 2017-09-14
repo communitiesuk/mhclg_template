@@ -1,7 +1,7 @@
 {
   "name": "hackney_template_ejs",
   "version": "<%= HackneyTemplate::VERSION %>",
-  "description": "Embedded JavaScript packaged version of the GOV.UK template",
+  "description": "Embedded JavaScript packaged version of the Hackney Council template",
   "keywords": ["alphagov", "govuk", "ejs", "template"],
   "bugs": "https://github.com/unboxed/hackney_template_ejs/issues",
   "license": "MIT",

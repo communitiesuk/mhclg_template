@@ -14,7 +14,7 @@ def valid_sections
     header_class: "{% block header_class %}{% endblock %}",
     html_lang: "{{ html_lang|default:'en' }}",
     inside_header: "{% block inside_header %}{% endblock %}",
-    page_title: "{% block page_title %}GOV.UK - The best place to find government services and information{% endblock %}",
+    page_title: "{% block page_title %}Hackney Council{% endblock %}",
     proposition_header: "{% block proposition_header %}{% endblock %}",
     top_of_page: "{% load staticfiles %}{% block top_of_page %}{% endblock %}"
 
