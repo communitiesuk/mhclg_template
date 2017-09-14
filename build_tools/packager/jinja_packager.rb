@@ -7,7 +7,7 @@ module Packager
   class JinjaPackager < TarPackager
     def initialize
       super
-      @base_name = "jinja_hackney_template-#{GovukTemplate::VERSION}"
+      @base_name = "jinja_hackney_template-#{HackneyTemplate::VERSION}"
     end
 
     def build

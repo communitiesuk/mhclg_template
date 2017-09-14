@@ -8,7 +8,7 @@ module Packager
   class DjangoPackager < TarPackager
     def initialize
       super
-      @base_name = "django_hackney_template-#{GovukTemplate::VERSION}"
+      @base_name = "django_hackney_template-#{HackneyTemplate::VERSION}"
     end
 
     def build

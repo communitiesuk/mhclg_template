@@ -38,15 +38,15 @@ module Compiler
     end
 
     def asset_path(file, options={})
-      query_string = GovukTemplate::VERSION
+      query_string = HackneyTemplate::VERSION
       return "#{file}?#{query_string}" if @is_stylesheet
       case File.extname(file)
       when '.css'
-        "<%= govukTemplateAssetPath %>stylesheets/#{file}?#{query_string}"
+        "<%= HackneyTemplateAssetPath %>stylesheets/#{file}?#{query_string}"
       when '.js'
-        "<%= govukTemplateAssetPath %>javascripts/#{file}?#{query_string}"
+        "<%= HackneyTemplateAssetPath %>javascripts/#{file}?#{query_string}"
       else
-        "<%= govukTemplateAssetPath %>images/#{file}?#{query_string}"
+        "<%= HackneyTemplateAssetPath %>images/#{file}?#{query_string}"
       end
     end
   end

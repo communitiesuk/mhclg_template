@@ -1,4 +1,4 @@
-module GovukTemplate
+module HackneyTemplate
   class Engine < ::Rails::Engine
     initializer "hackney_template.assets.precompile" do |app|
       app.config.assets.precompile += %w(

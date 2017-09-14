@@ -15,13 +15,13 @@ module Packager
 
     def initialize
       @repo_root = Pathname.new(File.expand_path('../../..', __FILE__))
-      @base_name = "hackney_template-#{GovukTemplate::VERSION}"
+      @base_name = "hackney_template-#{HackneyTemplate::VERSION}"
     end
 
     def build
       Dir.mktmpdir("hackney_template") do |dir|
         @target_dir = Pathname.new(dir).join('META-INF')
-        @internal_dir = Pathname.new(@target_dir).join("resources/webjars/hackney_template/#{GovukTemplate::VERSION}/")
+        @internal_dir = Pathname.new(@target_dir).join("resources/webjars/hackney_template/#{HackneyTemplate::VERSION}/")
         @internal_dir.mkpath
         prepare_contents
         create_jar
@@ -40,7 +40,7 @@ module Packager
           end
         end
       end
-      File.open(@target_dir.join('VERSION'), 'w') {|f| f.write "#{GovukTemplate::VERSION}\n" }
+      File.open(@target_dir.join('VERSION'), 'w') {|f| f.write "#{HackneyTemplate::VERSION}\n" }
     end
     
     def process_template(file)

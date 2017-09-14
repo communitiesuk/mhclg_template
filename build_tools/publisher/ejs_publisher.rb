@@ -9,7 +9,7 @@ module Publisher
     GIT_REPO = "github.com/unboxed/hackney_template_ejs.git"
     GIT_URL = "https://#{ENV['GITHUB_TOKEN']}@#{GIT_REPO}"
 
-    def initialize(version = GovukTemplate::VERSION)
+    def initialize(version = HackneyTemplate::VERSION)
       @version = version
       @repo_root = Pathname.new(File.expand_path('../../..', __FILE__))
       @source_dir = @repo_root.join('pkg', "ejs_hackney_template-#{@version}")

@@ -10,13 +10,13 @@ module Publisher
     GIT_REPO = "github.com/unboxed/hackney_template.git"
     GIT_URL = "https://#{ENV['GITHUB_TOKEN']}@#{GIT_REPO}"
 
-    def initialize(version = GovukTemplate::VERSION)
+    def initialize(version = HackneyTemplate::VERSION)
       @version = version
     end
 
     def publish
-      puts "Pushing hackney_template-#{GovukTemplate::VERSION}"
-      run "gem push pkg/hackney_template-#{GovukTemplate::VERSION}.gem"
+      puts "Pushing hackney_template-#{HackneyTemplate::VERSION}"
+      run "gem push pkg/hackney_template-#{HackneyTemplate::VERSION}.gem"
       Dir.mktmpdir("hackney_template_gem") do |dir|
         run("git clone -q #{GIT_URL.shellescape} #{dir.shellescape}",
             "Error running `git clone` on #{GIT_REPO}")

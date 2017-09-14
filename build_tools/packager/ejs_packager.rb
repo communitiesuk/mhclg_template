@@ -7,7 +7,7 @@ module Packager
   class EJSPackager < TarPackager
     def initialize
       super
-      @base_name = "ejs_hackney_template-#{GovukTemplate::VERSION}"
+      @base_name = "ejs_hackney_template-#{HackneyTemplate::VERSION}"
     end
 
     def build

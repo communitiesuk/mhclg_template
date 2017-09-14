@@ -5,7 +5,7 @@ module Publisher
   class ReleasePublisher
     GITHUB_REPO = 'unboxed/hackney_template'
 
-    def initialize(version = GovukTemplate::VERSION)
+    def initialize(version = HackneyTemplate::VERSION)
       @version = version
       @pkg_dir = Pathname.new(File.expand_path('../../..', __FILE__)).join('pkg')
       @github_client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])

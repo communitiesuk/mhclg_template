@@ -7,7 +7,7 @@ module Packager
   class LiquidPackager < TarPackager
     def initialize
       super
-      @base_name = "liquid_hackney_template-#{GovukTemplate::VERSION}"
+      @base_name = "liquid_hackney_template-#{HackneyTemplate::VERSION}"
     end
 
     def process_template(file)

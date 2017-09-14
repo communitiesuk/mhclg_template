@@ -5,7 +5,7 @@ require 'hackney_template/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "hackney_template"
-  spec.version       = GovukTemplate::VERSION
+  spec.version       = HackneyTemplate::VERSION
   spec.authors       = ["Alex Tomlins"]
   spec.email         = ["alex.tomlins@digital.cabinet-office.gov.uk"]
   spec.summary       = %q{Rails engine supplying the GOV.UK header/footer template}
