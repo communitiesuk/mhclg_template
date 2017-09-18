@@ -1,14 +1,14 @@
 {
   "name": "hackney_template_mustache",
   "version": "<%= HackneyTemplate::VERSION %>",
-  "description": "{{ mustache }} packaged version of the Hackney Council template",
-  "keywords": ["alphagov", "govuk", "mustache", "template"],
-  "bugs": "https://github.com/unboxed/hackney_template_mustache/issues",
+  "description": "{{ mustache }} packaged version of the Hackney template",
+  "keywords": ["hackney", "mustache", "template"],
+  "bugs": "https://github.com/unboxed/hackney_template/issues",
   "license": "MIT",
-  "author": "Government Digital Service developers (https://gds.blog.gov.uk/)",
+  "author": "Unboxed (https://unboxed.co/)",
   "main": "views/layouts/hackney_template.html",
   "repository": {
     "type": "git",
-    "url": "http://github.com/unboxed/hackney_template_mustache.git"
+    "url": "http://github.com/unboxed/hackney_template.git"
   }
 }

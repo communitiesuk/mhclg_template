@@ -1,14 +1,14 @@
 {
   "name": "hackney_template_ejs",
   "version": "<%= HackneyTemplate::VERSION %>",
-  "description": "Embedded JavaScript packaged version of the Hackney Council template",
-  "keywords": ["alphagov", "govuk", "ejs", "template"],
-  "bugs": "https://github.com/unboxed/hackney_template_ejs/issues",
+  "description": "Embedded JavaScript packaged version of the Hackney template",
+  "keywords": ["hackney", "ejs", "template"],
+  "bugs": "https://github.com/unboxed/hackney_template/issues",
   "license": "MIT",
-  "author": "Government Digital Service developers (https://gds.blog.gov.uk/)",
+  "author": "Unboxed (https://unboxed.co/)",
   "main": "views/layouts/hackney_template.html",
   "repository": {
     "type": "git",
-    "url": "http://github.com/unboxed/hackney_template_ejs.git"
+    "url": "http://github.com/unboxed/hackney_template.git"
   }
 }
