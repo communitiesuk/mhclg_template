@@ -16,7 +16,6 @@ app.set('view engine', 'html')
 // Set the location of the views and govuk_template layout file
 var appViews = [
   path.join(__dirname, '/express_test_pages/app/views'),
-  path.join(__dirname, '/node_modules/govuk_template_jinja/views/layouts'),
 	path.join(__dirname, '/node_modules/hackney_template_jinja/views/layouts')
 ]
 
@@ -31,7 +30,6 @@ nunjucks.configure(appViews, {
 
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/express_test_pages/public')))
-app.use('/public', express.static(path.join(__dirname, '/node_modules/govuk_template_jinja/assets')))
 app.use('/public', express.static(path.join(__dirname, '/node_modules/hackney_template_jinja/assets')))
 app.use('/public', express.static(path.join(__dirname, '/node_modules/govuk_frontend_toolkit')))
 
