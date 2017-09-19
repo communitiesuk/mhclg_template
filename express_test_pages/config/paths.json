@@ -1,0 +1,14 @@
+{
+  "assetsImg": "express_test_pages/assets/images/",
+  "assetsJs": "express_test_pages/assets/javascripts/",
+  "assetsScss": "express_test_pages/assets/sass/",
+  "config": "express_test_pages/config/",
+  "nodeModules": "node_modules/",
+  "package": "express_test_pages/packages/govuk-elements-sass/",
+  "public": "express_test_pages/public/",
+  "publicImg": "express_test_pages/public/images/",
+  "publicCss": "express_test_pages/public/stylesheets/",
+  "publicJs": "express_test_pages/public/javascripts/",
+  "testSpecs": "express_test_pages/test/specs/",
+  "views": "express_test_pages/views/"
+}
