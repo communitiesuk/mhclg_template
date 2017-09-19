@@ -101,7 +101,11 @@ gulp.task('test:app', () =>
 // When a file is changed, re-run the build task.
 // ---------------------------------------
 
-gulp.task('watch', ['watch:styles', 'watch:scripts', 'watch:images'])
+gulp.task('watch', ['watch:styles_from_hackney_template', 'watch:styles', 'watch:scripts', 'watch:images'])
+
+gulp.task('watch:styles_from_hackney_template', () => {
+  return gulp.watch('source/assets/stylesheets/' + '**/*.scss', ['styles'])
+})
 
 gulp.task('watch:styles', () => {
   return gulp.watch(paths.assetsScss + '**/*.scss', ['styles'])
