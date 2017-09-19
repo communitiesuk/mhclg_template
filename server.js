@@ -7,6 +7,9 @@ var bodyParser = require('body-parser')
 var config = require('./express_test_pages/app/config.js')
 var port = (process.env.PORT || 3000)
 var IS_HEROKU = process.env.hasOwnProperty('IS_HEROKU')
+var version = "0.0.2"
+var template_path = '/pkg/jinja_hackney_template-' + version
+
 
 module.exports = app
 
@@ -16,7 +19,7 @@ app.set('view engine', 'html')
 // Set the location of the views and govuk_template layout file
 var appViews = [
   path.join(__dirname, '/express_test_pages/app/views'),
-	path.join(__dirname, '/node_modules/hackney_template_jinja/views/layouts')
+	path.join(__dirname, template_path + '/views/layouts')
 ]
 
 // Tell nunjucks we are using express to serve the templates within
@@ -30,7 +33,7 @@ nunjucks.configure(appViews, {
 
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/express_test_pages/public')))
-app.use('/public', express.static(path.join(__dirname, '/node_modules/hackney_template_jinja/assets')))
+app.use('/public', express.static(path.join(__dirname, template_path + '/assets')))
 app.use('/public', express.static(path.join(__dirname, '/node_modules/govuk_frontend_toolkit')))
 
 // Support for parsing data in POSTs
