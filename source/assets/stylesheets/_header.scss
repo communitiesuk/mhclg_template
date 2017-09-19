@@ -2,12 +2,13 @@
 @import '_conditionals';
 @import '_measurements';
 
+
 #global-header {
-  background-color: $black;
+  background-color: $hackney-green;
   width: 100%;
 
   .header-wrapper {
-    background-color: $black;
+    background-color: $hackney-green;
     max-width: 990px;
     margin: 0 auto;
     padding-top: 8px;
