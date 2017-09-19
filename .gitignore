@@ -21,3 +21,4 @@ lib/*
 app/views/snippets/encoded/*
 govuk_modules/*
 npm-debug.log
+express_test_pages/public
