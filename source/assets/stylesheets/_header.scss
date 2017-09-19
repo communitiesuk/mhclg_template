@@ -224,16 +224,6 @@
   }
 }
 
-/* Global header bar */
-
-#global-header-bar {
-  @extend %site-width-container;
-  height: 10px;
-  background-color: $govuk-blue;
-  @include ie-lte(8) {
-    font-size: 0;
-  }
-}
 
 /* Global cookie message */
 

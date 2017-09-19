@@ -72,8 +72,6 @@
 
     <%= yield :after_header %>
 
-    <div id="global-header-bar"></div>
-
     <%= content_for?(:content) ? yield(:content) : yield %>
 
     <footer class="group js-footer" id="footer" role="contentinfo">
