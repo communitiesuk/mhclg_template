@@ -5,7 +5,9 @@
 @import "device-pixels";
 @import "typography";
 @import "grid_layout";
-@import "design-patterns/_buttons";
+@import "design-patterns/alpha-beta";
+@import "design-patterns/buttons";
+@import "design-patterns/breadcrumbs";
 
 /* local styleguide includes */
 @import "styleguide/colours";
@@ -15,3 +17,6 @@
 @import "accessibility";
 @import "header";
 @import "footer";
+
+@import "../../../node_modules/govuk-elements-sass/public/sass/elements";       // GOV.UK elements
+
