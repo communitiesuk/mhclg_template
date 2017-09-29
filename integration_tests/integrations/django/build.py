@@ -17,7 +17,7 @@ context = {
     "html_lang": "rb",
     "skip_link_message": "Custom skip link text",
     "logo_link_title": "Custom logo link title text",
-    "crown_copyright_message": "Custom crown copyright message text",
+    "hackney_copyright_message": "Custom hackney copyright message text",
 }
 
 content = render_to_string("test_template.html", context)

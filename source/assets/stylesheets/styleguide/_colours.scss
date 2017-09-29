@@ -1,17 +1,21 @@
-// GOV.UK template colours
+// Hackney template colours
+
+$hackney-green:   #06644B;
+$hackney-green-2: #0AA44C;
+$hackney-green-3: #7AB92C;
+$hackney-green-4: #A9CD75;
 
 $proposition-border: #2e3133;
 // Based on GOV.UK brand blue but slightly lighter so it hits contrast on the
 // black header bar when used as copy colour.
 $proposition-active-nav: #1d8feb;
 
-$footer-background: $grey-3;
-$footer-border-top: #a1acb2;
-$footer-link: #454a4c;
-$footer-link-hover: #171819;
+$footer-background: $hackney-green;
+$footer-border-top: $hackney-green-3;
+$footer-link: $hackney-green-4;
+$footer-link-hover: white;
 $footer-text: $footer-link;
 
-$hackney-green: #006950;
 
 
 

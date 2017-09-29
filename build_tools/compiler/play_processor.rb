@@ -12,7 +12,7 @@ module Compiler
       # top_of_page has a special purpose: it is required by Play to define the
       # parameters to pass when rendering
       # https://www.playframework.com/documentation/2.2.x/ScalaTemplates#Template-parameters
-      top_of_page: '@(title: Option[String], bodyClasses: Option[String], htmlLang: Option[String] = None)(head:Html, bodyStart:Html, bodyEnd:Html, insideHeader:Html, afterHeader:Html, footerTop:Html, footerLinks:Html, headerClass:Html = HtmlFormat.empty, propositionHeader:Html = HtmlFormat.empty, homepageUrl:Option[Html] = None, globalHeaderText:Option[Html] = None, cookieMessage: Option[Html] = None, skipLinkMessage:Option[Html], logoLinkTitle:Option[Html] = None, licenceMessage:Html, crownCopyrightMessage:Option[Html])(content:Html)',
+      top_of_page: '@(title: Option[String], bodyClasses: Option[String], htmlLang: Option[String] = None)(head:Html, bodyStart:Html, bodyEnd:Html, insideHeader:Html, afterHeader:Html, footerTop:Html, footerLinks:Html, headerClass:Html = HtmlFormat.empty, propositionHeader:Html = HtmlFormat.empty, homepageUrl:Option[Html] = None, globalHeaderText:Option[Html] = None, cookieMessage: Option[Html] = None, skipLinkMessage:Option[Html], logoLinkTitle:Option[Html] = None, licenceMessage:Html, hackneyCopyrightMessage:Option[Html])(content:Html)',
       head: '@head',
       body_classes: '@bodyClasses.getOrElse("")',
       header_class: '@headerClass',
@@ -30,7 +30,7 @@ module Compiler
       skip_link_message: '@skipLinkMessage.getOrElse("Skip to main content")',
       logo_link_title: '@logoLinkTitle.getOrElse("Go to the Hackney Council homepage")',
       licence_message: '@licenceMessage',
-      crown_copyright_message: '@crownCopyrightMessage.getOrElse("&copy; Crown copyright")',
+      hackney_copyright_message: '@hackneyCopyrightMessage.getOrElse("&copy; London Borough of Hackney")',
     }
 
     def render_erb

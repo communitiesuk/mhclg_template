@@ -29,7 +29,7 @@ module Compiler
       skip_link_message:    "{% if page.skip_link_message %}{{ page.skip_link_message }}{% else %}Skip to main content{% endif %}",
       logo_link_title:      "{% if page.logo_link_title %}{{ page.logo_link_title }}{% else %}Go to the Hackney Council homepage{% endif %}",
       licence_message:      include_for(:licence_message),
-      crown_copyright_message: "{% if page.crown_copyright_message %}{{ page.crown_copyright_message }}{% else %}&copy; Crown copyright{% endif %}",
+      hackney_copyright_message: "{% if page.hackney_copyright_message %}{{ page.hackney_copyright_message }}{% else %}&copy; London Borough of Hackney{% endif %}",
     }
 
     def handle_yield(section = :layout)

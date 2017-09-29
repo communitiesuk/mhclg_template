@@ -17,7 +17,7 @@ def valid_sections
     page_title: "{% block page_title %}Hackney Council{% endblock %}",
     proposition_header: "{% block proposition_header %}{% endblock %}",
     top_of_page: "{% block top_of_page %}{% endblock %}",
-    crown_copyright_message: "{{ crown_copyright_message|default('&copy; Crown copyright')|safe }}"
+    hackney_copyright_message: "{{ hackney_copyright_message|default('&copy; London Borough of Hackney')|safe }}"
 
   }
 end

@@ -96,8 +96,8 @@ describe "HTML rendered by each integration testing app" do
         expect(subject).to have_tag(".open-government-licence", text: /Custom license message text/)
       end
 
-      it "should support a crown_copyright_message" do
-        expect(subject).to have_tag(".copyright", text: "Custom crown copyright message text")
+      it "should support a hackney_copyright_message" do
+        expect(subject).to have_tag(".copyright", text: "Custom hackney copyright message text")
       end
     end
   end

@@ -29,7 +29,7 @@ module Compiler
       skip_link_message:    "<% if (skipLinkMessage) { %><%= skipLinkMessage %><% } else { %>Skip to main content<% } %>",
       logo_link_title:      "<% if (logoLinkTitle) { %><%= logoLinkTitle %><% } else { %>Go to the Hackney Council homepage<% } %>",
       licence_message:      partial_for(:licence_message),
-      crown_copyright_message: "<% if (crownCopyrightMessage) { %><%= crownCopyrightMessage %><% } else { %>&copy; Crown copyright<% } %>",
+      hackney_copyright_message: "<% if (hackneyCopyrightMessage) { %><%= hackneyCopyrightMessage %><% } else { %>&copy; London Borough of Hackney<% } %>",
     }
 
 

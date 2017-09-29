@@ -2,7 +2,17 @@
 
 #footer {
   background-color: $footer-background;
-  border-top: 1px solid $footer-border-top;
+
+  // add 'Hackney lines' to footer
+  border-top: 3px solid $hackney-green-3;
+  &:before {
+    content: "";
+    display: block;
+    border-bottom: 3px solid $hackney-green-2;
+    border-top: 2px solid $hackney-green-4;
+    height: 10px;
+    margin-top: -8px;
+  }
 
   .footer-wrapper {
     @extend %site-width-container;
@@ -58,12 +68,8 @@
         @include core-16($line-height: (24/16), $line-height-640: (24/16));
         display: inline-block;
         list-style: none;
-        margin: 0 0 1.5em 0;
         padding: 0;
 
-        @include media(tablet) {
-          margin: 0 0 1em 0;
-        }
 
         li {
           display: inline-block;

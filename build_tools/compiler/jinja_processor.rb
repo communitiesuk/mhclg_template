@@ -37,7 +37,7 @@ module Compiler
       skip_link_message:    statement_tag_for(:skip_link_message, 'Skip to main content'),
       logo_link_title:      statement_tag_for(:logo_link_title, 'Go to the Hackney Council homepage'),
       licence_message:      block_for(:licence_message, '<p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>'),
-      crown_copyright_message: unescaped_statement_tag_for(:crown_copyright_message, '&copy; Crown copyright'),
+      hackney_copyright_message: unescaped_statement_tag_for(:hackney_copyright_message, '&copy; London Borough of Hackney'),
     }
 
     def handle_yield(section = :layout)

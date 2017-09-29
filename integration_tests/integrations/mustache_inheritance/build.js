@@ -37,7 +37,7 @@ compiledTemplate = Hogan.compile("\
   {{$skipLinkMessage}}Custom skip link text{{/skipLinkMessage}} \
   {{$logoLinkTitle}}Custom logo link title text{{/logoLinkTitle}} \
   {{$licenceMessage}}Custom license message text{{/licenceMessage}} \
-  {{$crownCopyrightMessage}}Custom crown copyright message text{{/crownCopyrightMessage}} \
+  {{$hackneyCopyrightMessage}}Custom hackney copyright message text{{/hackneyCopyrightMessage}} \
 \
 {{/layout}} \
 ");

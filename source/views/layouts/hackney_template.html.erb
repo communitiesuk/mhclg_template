@@ -82,19 +82,23 @@
         <div class="footer-meta">
           <div class="footer-meta-inner">
             <%= yield :footer_support_links %>
-
-            <div class="open-government-licence">
-              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-              <% if content_for?(:licence_message) %>
-                <%= yield :licence_message %>
-              <% else %>
-                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
-              <% end %>
-            </div>
+            <ul>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">A to Z</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Email alerts</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Privacy statement</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+            </ul>
+            
           </div>
 
           <div class="copyright">
-            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/"><%= content_for?(:crown_copyright_message) ? yield(:crown_copyright_message) : "© Crown copyright" %></a>
+            <%= content_for?(:hackney_copyright_message) ? yield(:hackney_copyright_message) : "© London Borough of Hackney" %>
           </div>
         </div>
       </div>
