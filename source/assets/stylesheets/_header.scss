@@ -82,11 +82,11 @@
     text-rendering: optimizeLegibility;
     border-bottom: 1px solid transparent;
 
-    background: image-url('images/hackney-logo-white.png') no-repeat;
+    background: file-url('images/hackney-logo-white.png') no-repeat;
     background-size: 160px 32px;
     background-position: 0 0;
     @include ie-lte(8) {
-      background-image: image-url('images/hackney-logo-white-1x.png');
+      background-image: file-url('images/hackney-logo-white-1x.png');
     }
 
     img {

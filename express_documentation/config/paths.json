@@ -1,0 +1,14 @@
+{
+  "assetsImg": "express_documentation/assets/images/",
+  "assetsJs": "express_documentation/assets/javascripts/",
+  "assetsScss": "express_documentation/assets/sass/",
+  "config": "express_documentation/config/",
+  "nodeModules": "node_modules/",
+  "package": "express_documentation/packages/govuk-elements-sass/",
+  "public": "express_documentation/public/",
+  "publicImg": "express_documentation/public/images/",
+  "publicCss": "express_documentation/public/stylesheets/",
+  "publicJs": "express_documentation/public/javascripts/",
+  "testSpecs": "express_documentation/test/specs/",
+  "views": "express_documentation/views/"
+}

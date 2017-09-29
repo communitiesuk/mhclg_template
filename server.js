@@ -1,10 +1,10 @@
 var path = require('path')
 var express = require('express')
 var nunjucks = require('nunjucks')
-var routes = require('./express_test_pages/app/routes.js')
+var routes = require('./express_documentation/app/routes.js')
 var app = express()
 var bodyParser = require('body-parser')
-var config = require('./express_test_pages/app/config.js')
+var config = require('./express_documentation/app/config.js')
 var port = (process.env.PORT || 3000)
 var IS_HEROKU = process.env.hasOwnProperty('IS_HEROKU')
 var version = "0.0.2"
@@ -18,7 +18,7 @@ app.set('view engine', 'html')
 
 // Set the location of the views and govuk_template layout file
 var appViews = [
-  path.join(__dirname, '/express_test_pages/app/views'),
+  path.join(__dirname, '/express_documentation/app/views'),
 	path.join(__dirname, template_path + '/views/layouts')
 ]
 
@@ -32,7 +32,7 @@ nunjucks.configure(appViews, {
 })
 
 // Middleware to serve static assets
-app.use('/public', express.static(path.join(__dirname, '/express_test_pages/public')))
+app.use('/public', express.static(path.join(__dirname, '/express_documentation/public')))
 app.use('/public', express.static(path.join(__dirname, template_path + '/assets')))
 app.use('/public', express.static(path.join(__dirname, '/node_modules/govuk_frontend_toolkit')))
 

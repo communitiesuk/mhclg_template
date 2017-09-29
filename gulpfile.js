@@ -1,6 +1,6 @@
 'use strict'
 
-const paths = require('./express_test_pages/config/paths.json')
+const paths = require('./express_documentation/config/paths.json')
 const gulp = require('gulp')
 const gutil = require('gulp-util')
 const cssnano = require('gulp-cssnano')
