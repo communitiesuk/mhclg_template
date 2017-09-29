@@ -9,7 +9,7 @@
 | body_classes              | Classes to be added to the `<body>` element     | Insertion point
 | body_start                | After opening `<body>` element                  | Insertion point
 | skip_link_message         | Text inside the skip to main content link       | Skip to main content
-| cookie_message            | Text inside the cookie message banner           | `<p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>`
+| cookie_message            | Text inside the cookie message banner           | `<p>Hackney.gov.uk uses cookies to make the site simpler. <a href="https://www.hackney.gov.uk/data-protection-foi">Find out more about cookies</a></p>`
 | header_class              | `<header>` element                              | Set the value of header_class to [with-proposition](usage.md#propositional-title-and-navigation) to show the propositional navigation
 | homepage_url              | URL of anchor element wrapping logo             | https://www.gov.uk/
 | logo_link_title           | Title of anchor element wrapping logo           | Go to the GOV.UK homepage

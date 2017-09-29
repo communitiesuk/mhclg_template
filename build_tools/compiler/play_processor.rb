@@ -26,7 +26,7 @@ module Compiler
       footer_support_links: '@footerLinks',
       homepage_url: '@homepageUrl.getOrElse("https://www.hackney.gov.uk/")',
       global_header_text: '@globalHeaderText.getOrElse("GOV.UK")',
-      cookie_message: '@cookieMessage.getOrElse("<p>Hackney Council uses cookies to make the site simpler. <a href=\"https://www.hackney.gov.uk/data-protection-foi\">Find out more about cookies</a></p>")',
+      cookie_message: '@cookieMessage.getOrElse("<p>Hackney.gov.uk uses cookies to make the site simpler. <a href=\"https://www.hackney.gov.uk/data-protection-foi\">Find out more about cookies</a></p>")',
       skip_link_message: '@skipLinkMessage.getOrElse("Skip to main content")',
       logo_link_title: '@logoLinkTitle.getOrElse("Go to the Hackney Council homepage")',
       licence_message: '@licenceMessage',

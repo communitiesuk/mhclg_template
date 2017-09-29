@@ -5,6 +5,6 @@
 module.exports = {
 
   // Cookie warning
-  cookieText: 'GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a>'
+  cookieText: 'Hackney.gov.uk uses cookies to make the site simpler. <a href="https://www.hackney.gov.uk/data-protection-foi">Find out more about cookies</a>'
 
 }
