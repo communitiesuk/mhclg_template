@@ -1,9 +1,14 @@
+/* Hackney template variables */
+@import "../../../source/assets/stylesheets/styleguide/variables";
+@import "../../../source/assets/stylesheets/styleguide/colours";
+
+
 // GOV.UK front end toolkit
 // Sass variables, mixins and functions
 // https://github.com/alphagov/govuk_frontend_toolkit/tree/master/stylesheets
 
 // Settings (variables)
-@import "colours";                                // Colour variables
+@import "colours/organisation";                   // Colour variables
 @import "measurements";                           // Widths and gutter variables
 
 // Mixins
