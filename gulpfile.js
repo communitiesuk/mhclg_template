@@ -10,6 +10,8 @@ const nodemon = require('gulp-nodemon')
 const rename = require('gulp-rename')
 const runsequence = require('run-sequence')
 const sass = require('gulp-sass')
+const sourcemaps = require('gulp-sourcemaps')
+
 
 // Clean task ----------------------------
 // Deletes the /public directory
@@ -26,15 +28,18 @@ gulp.task('clean', () => {
 
 gulp.task('styles', () => {
   return gulp.src(paths.assetsScss + '**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
         'node_modules/govuk_frontend_toolkit/stylesheets'
       ]
     }).on('error', sass.logError))
     .pipe(gulp.dest(paths.publicCss))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
-    .pipe(gulp.dest(paths.publicCss))
+//    .pipe(rename({ suffix: '.min' }))
+//    .pipe(cssnano())
+//    .pipe(gulp.dest(paths.publicCss))
+    .pipe(sourcemaps.write('../maps'))
+    .pipe(gulp.dest(paths.publicCss))    
 })
 
 // Images build task ---------------------
