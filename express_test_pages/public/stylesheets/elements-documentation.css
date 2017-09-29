@@ -1,3 +1,4 @@
+/* Hackney template variables */
 .example:after {
   content: "";
   display: block;
@@ -42,7 +43,7 @@
   margin-top: 3em; }
 
 .list-contents li {
-  font-family: "nta", Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
   font-size: 14px;
@@ -93,7 +94,7 @@
     top: 0;
     left: 0;
     padding: 0.21053em 0.78947em 0.21053em 0.78947em;
-    font-family: "nta", Arial, sans-serif;
+    font-family: "Droid Sans", Arial, sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 12px;
@@ -235,13 +236,13 @@
   background-color: #00823b; }
 
 .swatch-link-colour {
-  background-color: #005ea5; }
+  background-color: #0AA44C; }
 
 .swatch-link-colour-visited {
-  background-color: #4c2c92; }
+  background-color: #077436; }
 
 .swatch-link-colour-hover {
-  background-color: #2b8cc4; }
+  background-color: #0bb253; }
 
 .swatch-border-colour {
   background-color: #bfc1c3; }
@@ -270,7 +271,7 @@
       padding-top: 10px; } }
 
 .swatch-wrapper li {
-  font-family: "nta", Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
   font-size: 14px;
