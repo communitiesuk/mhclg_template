@@ -3,7 +3,6 @@
 .sass-cache
 /Gemfile.lock
 /app
-pkg
 
 integration_tests/html_for_testing/*.html
 

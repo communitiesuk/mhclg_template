@@ -1,0 +1,112 @@
+@(title: Option[String], bodyClasses: Option[String], htmlLang: Option[String] = None)(head:Html, bodyStart:Html, bodyEnd:Html, insideHeader:Html, afterHeader:Html, footerTop:Html, footerLinks:Html, headerClass:Html = HtmlFormat.empty, propositionHeader:Html = HtmlFormat.empty, homepageUrl:Option[Html] = None, globalHeaderText:Option[Html] = None, cookieMessage: Option[Html] = None, skipLinkMessage:Option[Html], logoLinkTitle:Option[Html] = None, licenceMessage:Html, hackneyCopyrightMessage:Option[Html])(content:Html)
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="@htmlLang.getOrElse("en")"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="@htmlLang.getOrElse("en")"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>@title.getOrElse("Hackney Council")</title>
+
+    <!--[if gt IE 8]><!--><link href="@routes.Template.at("stylesheets/hackney-template.css")" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="@routes.Template.at("stylesheets/hackney-template-ie6.css")" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="@routes.Template.at("stylesheets/hackney-template-ie7.css")" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="@routes.Template.at("stylesheets/hackney-template-ie8.css")" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="@routes.Template.at("stylesheets/hackney-template-print.css")" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="@routes.Template.at("stylesheets/fonts-ie8.css")" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="@routes.Template.at("stylesheets/fonts.css")" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="@routes.Template.at("javascripts/ie.js")"></script><![endif]-->
+
+    <link rel="shortcut icon" href="@routes.Template.at("images/favicon.ico")" type="image/x-icon" />
+    
+    <link rel="mask-icon" href="@routes.Template.at("images/hackney-logo-green.svg")" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="@routes.Template.at("images/apple-touch-icon-180x180.png")">
+    <link rel="apple-touch-icon" sizes="167x167" href="@routes.Template.at("images/apple-touch-icon-167x167.png")">
+    <link rel="apple-touch-icon" sizes="152x152" href="@routes.Template.at("images/apple-touch-icon-152x152.png")">
+    <link rel="apple-touch-icon" href="@routes.Template.at("images/apple-touch-icon.png")">
+
+    
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="@routes.Template.at("images/opengraph-image.png")">
+
+    @head
+  </head>
+
+  <body class="@bodyClasses.getOrElse("")">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    @bodyStart
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">@skipLinkMessage.getOrElse("Skip to main content")</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      
+        @cookieMessage.getOrElse("<p>Hackney.gov.uk uses cookies to make the site simpler. <a href="https://www.hackney.gov.uk/data-protection-foi">Find out more about cookies</a></p>")
+      
+    </div>
+
+    
+    <header role="banner" id="global-header" class="@headerClass">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="@homepageUrl.getOrElse("https://www.hackney.gov.uk/")" title="@logoLinkTitle.getOrElse("Go to the Hackney Council homepage")" id="logo" class="content">
+              <img src="@routes.Template.at("images/hackney-logo-green-trans.png")" width="160" height="32" alt="">
+            </a>
+          </div>
+          @insideHeader
+        </div>
+        @propositionHeader
+      </div>
+    </header>
+    
+
+    @afterHeader
+
+    @content
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        @footerTop
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            @footerLinks
+            <ul>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">A to Z</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Email alerts</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Privacy statement</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+            </ul>
+            
+          </div>
+
+          <div class="copyright">
+            @hackneyCopyrightMessage.getOrElse("&copy; London Borough of Hackney")
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="@routes.Template.at("javascripts/hackney-template.js")"></script>
+
+    @bodyEnd
+
+    
+    <script>if (typeof window.HACKNEY === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  </body>
+</html>

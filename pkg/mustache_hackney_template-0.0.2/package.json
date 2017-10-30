@@ -1,0 +1,14 @@
+{
+  "name": "hackney_template_mustache",
+  "version": "0.0.2",
+  "description": "{{ mustache }} packaged version of the Hackney template",
+  "keywords": ["hackney", "mustache", "template"],
+  "bugs": "https://github.com/unboxed/hackney_template/issues",
+  "license": "MIT",
+  "author": "Unboxed (https://unboxed.co/)",
+  "main": "views/layouts/hackney_template.html",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/unboxed/hackney_template.git"
+  }
+}

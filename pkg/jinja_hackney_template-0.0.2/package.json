@@ -1,0 +1,14 @@
+{
+  "name": "hackney_template_jinja",
+  "version": "0.0.2",
+  "description": "Jinja packaged version of the Hackney template",
+  "keywords": ["hackney", "jinja", "template"],
+  "bugs": "https://github.com/unboxed/hackney_template/issues",
+  "license": "MIT",
+  "author": "Unboxed (https://unboxed.co/)",
+  "main": "views/layouts/hackney_template.html",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/unboxed/hackney_template.git"
+  }
+}

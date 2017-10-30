@@ -1,0 +1,112 @@
+<%- partial('partials/_top_of_page') %>
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="<% if (htmlLang) { %><%= htmlLang %><% } else { %>en<% } %>"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="<% if (htmlLang) { %><%= htmlLang %><% } else { %>en<% } %>"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title><%- partial('partials/_page_title') %></title>
+
+    <!--[if gt IE 8]><!--><link href="<%= HackneyTemplateAssetPath %>stylesheets/hackney-template.css?0.0.2" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="<%= HackneyTemplateAssetPath %>stylesheets/hackney-template-ie6.css?0.0.2" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="<%= HackneyTemplateAssetPath %>stylesheets/hackney-template-ie7.css?0.0.2" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="<%= HackneyTemplateAssetPath %>stylesheets/hackney-template-ie8.css?0.0.2" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="<%= HackneyTemplateAssetPath %>stylesheets/hackney-template-print.css?0.0.2" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="<%= HackneyTemplateAssetPath %>stylesheets/fonts-ie8.css?0.0.2" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="<%= HackneyTemplateAssetPath %>stylesheets/fonts.css?0.0.2" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="<%= HackneyTemplateAssetPath %>javascripts/ie.js?0.0.2"></script><![endif]-->
+
+    <link rel="shortcut icon" href="<%= HackneyTemplateAssetPath %>images/favicon.ico?0.0.2" type="image/x-icon" />
+    
+    <link rel="mask-icon" href="<%= HackneyTemplateAssetPath %>images/hackney-logo-green.svg?0.0.2" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= HackneyTemplateAssetPath %>images/apple-touch-icon-180x180.png?0.0.2">
+    <link rel="apple-touch-icon" sizes="167x167" href="<%= HackneyTemplateAssetPath %>images/apple-touch-icon-167x167.png?0.0.2">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= HackneyTemplateAssetPath %>images/apple-touch-icon-152x152.png?0.0.2">
+    <link rel="apple-touch-icon" href="<%= HackneyTemplateAssetPath %>images/apple-touch-icon.png?0.0.2">
+
+    
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="<%= HackneyTemplateAssetPath %>images/opengraph-image.png?0.0.2">
+
+    <%- partial('partials/_head') %>
+  </head>
+
+  <body class="<%= bodyClasses %>">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <%- partial('partials/_body_start') %>
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink"><% if (skipLinkMessage) { %><%= skipLinkMessage %><% } else { %>Skip to main content<% } %></a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+      
+        <%- partial('partials/_cookie_message') %>
+      
+    </div>
+
+    
+    <header role="banner" id="global-header" class="<% if (headerClass) { %><%= headerClass %><% } %>">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="<% if (homepageUrl) { %><%= homepageUrl %><% } else { %>https://www.hackney.gov.uk/<% } %>" title="<% if (logoLinkTitle) { %><%= logoLinkTitle %><% } else { %>Go to the Hackney Council homepage<% } %>" id="logo" class="content">
+              <img src="<%= HackneyTemplateAssetPath %>images/hackney-logo-green-trans.png?0.0.2" width="160" height="32" alt="">
+            </a>
+          </div>
+          <%- partial('partials/_inside_header') %>
+        </div>
+        <%- partial('partials/_proposition_header') %>
+      </div>
+    </header>
+    
+
+    <%- partial('partials/_after_header') %>
+
+    <%- partial('partials/_content') %>
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        <%- partial('partials/_footer_top') %>
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            <%- partial('partials/_footer_support_links') %>
+            <ul>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">A to Z</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Email alerts</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Privacy statement</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+            </ul>
+            
+          </div>
+
+          <div class="copyright">
+            <% if (hackneyCopyrightMessage) { %><%= hackneyCopyrightMessage %><% } else { %>&copy; London Borough of Hackney<% } %>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="<%= HackneyTemplateAssetPath %>javascripts/hackney-template.js?0.0.2"></script>
+
+    <%- partial('partials/_body_end') %>
+
+    
+    <script>if (typeof window.HACKNEY === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  </body>
+</html>
