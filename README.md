@@ -1,15 +1,18 @@
-# GOV.UK Template
+# Hackney Council Digital Template
 
-This provides a template containing the GOV.UK header and footer, and associated assets. It provides a consistent GOV.UK brand experience across `www.hackney.gov.uk` and all services running under the `service.gov.uk` domain.
+This provides a template containing the Hackney Council header and footer, and associated assets. It aims to provide a consistent Hackney Council brand experience across `www.hackney.gov.uk`.
 
 The template is built from [`source`](source/) files, and multiple packages are generated to support different languages and frameworks.
 
-Packages are available for [RubyGems](https://rubygems.org/gems/hackney_template), NPM ([mustache](https://npmjs.org/package/hackney_template_mustache), [ejs](https://npmjs.org/package/hackney_template_ejs),  [jinja](https://npmjs.org/package/hackney_template_jinja)), and other [templating languages](docs/packaging.md).
+Packages for RubyGems, NPM, ejs, jinja, and other templating languages are available [here](https://github.com/unboxed/hackney_template/pkg).
 
 
-## Previewing the template
+## Hackney Digital Style Guide
 
-You can [view a collection of auto-generated examples](http://alphagov.github.io/hackney_template/) of the current hackney_template release, which show how you can use the template.
+This is currently in development in [`express_documentation`](express_documentation/). It's based on GOV.UK Elements. 
+
+Start by running `npm start`.
+
 
 ## Requirements
 

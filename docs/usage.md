@@ -1,6 +1,6 @@
 # Usage
 
-## To customise the GOV.UK template
+## To customise the Hackney Council template
 
 Refer to the table of [template blocks](./docs/template-blocks.md) and their default values.
 
