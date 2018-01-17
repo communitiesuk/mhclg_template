@@ -8,7 +8,11 @@ Add `hackney_template` to your app's `Gemfile`:
 gem 'hackney_template', git: 'https://github.com/unboxed/hackney_template'
 ```
 
-(In a production system you'll want to pin a more specific version for stability)
+In a production system you'll want to pin a more specific reference for stability. For example (where `c4400e` is the hash of the specific commit to want to pin to):
+
+```ruby
+gem 'hackney_template', git: 'https://github.com/unboxed/hackney_template', ref: 'c4400e'
+```
 
 ## Use the layout
 
