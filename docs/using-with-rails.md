@@ -5,7 +5,7 @@
 Add `hackney_template` to your app's `Gemfile`:
 
 ```ruby
-gem 'hackney_template'
+gem 'hackney_template', git: 'https://github.com/unboxed/hackney_template'
 ```
 
 (In a production system you'll want to pin a more specific version for stability)
